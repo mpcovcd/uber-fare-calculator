@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <container class="calculator">
+        <h2>Uber Fare Estimator</h2>
+        <p>Estimate the total cost of your ride based on distance, time, and method of transport.</p>
+        <div class="fareWidget">
+        <form action="#" target="_self" method="get">
+            <label for="rDistance">Ride Distance <div class="attribute">(miles)</div></label><br>
+            <input type="number" id="rDistance" name="rDistance"><br>
+            <label for="rTime">Ride Time <div class="attribute">(minutes)</div></label><br>
+            <input type="number" id="rTime" name="rTime"><br>
+            <label for="rType">Method of Transporation</label><br>
+            <div class="btn-group">
+                <button type="button" id="car"><i class="fas fa-car"></i></button>    
+                <button type="button" id="horse"><i class="fas fa-horse"></i></button>    
+                <button type="button" id="plane"><i class="fas fa-plane-departure"></i></button>    
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <div class="resultsDiv">
+        </div>
+        </div>
+    </container>
+</body>
+<script src="fare_estimator.js"></script>
+<script src="https://kit.fontawesome.com/528bf3d77a.js" crossorigin="anonymous"></script>
+</html>
